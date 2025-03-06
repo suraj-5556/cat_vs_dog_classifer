@@ -4,8 +4,11 @@ import joblib
 from PIL import Image
 
 # Load your trained model
-MODEL_PATH = "cat_dog_model.joblib"
-model = joblib.load(MODEL_PATH)
+from tensorflow import keras
+
+MODEL_PATH = "cat_dog_model.joblib"  # or the actual path to your model
+model = keras.models.load_model(MODEL_PATH)
+
 
 def preprocess_image(image):
     image = image.resize((256, 256)) 
