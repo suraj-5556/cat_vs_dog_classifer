@@ -6,7 +6,7 @@ from PIL import Image
 # Load your trained model
 from tensorflow import keras
 
-MODEL_PATH = "cat_dog_model.joblib"  # or the actual path to your model
+MODEL_PATH = "cat_dog_model.keras"  # or the actual path to your model
 model = keras.models.load_model(MODEL_PATH)
 
 
