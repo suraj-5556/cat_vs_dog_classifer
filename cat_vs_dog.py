@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import joblib
-import cv2
 from PIL import Image
 
 # Load your trained model
